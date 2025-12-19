@@ -13,7 +13,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-12 w-full max-w-6xl mx-auto px-6">
       <h2 className="text-5xl md:text-6xl font-bold font-mono mb-6 text-center">
-        Projects<span className="text-(--effect)">.</span>
+        Noteable Projects<span className="text-(--effect)">.</span>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
