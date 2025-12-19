@@ -1,35 +1,61 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-}
-
 body {
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.light{
+  --background: #ffffff;
+  --secondary-bg: #f5f5f5; 
+  --effect:  #f97316;
+  --effectText: #ffffff; 
+  --borderColor: #171717; 
+  --navHoverStroke: #ffffff;
+  --shadowColor: #171717;
+  --navHoverColor: #171717;
+  --textMain: #000000; 
+  --textSecondary: #404040;
+  --cardBg: #ffffff;
+}
+
+.dark {
+  --background: #0F1115;
+  --secondary-bg: #151922;
+
+  --effect: #FF6A00;
+  --effectText: #ffffff;
+
+  --borderColor: #ffffff;
+  --navHoverStroke: #FF6A00;
+
+  --shadowColor: #000000;
+  --navHoverColor: #EDEDED;
+
+  --textMain: #EDEDED;
+  --textSecondary: #B3B3B3;
+
+  --cardBg: #151922;
+}
+
+
 @layer components {
   .underline-animation {
     @apply relative;
   }
   .underline-animation::after {
-    @apply absolute content-[''] w-full h-1 bg-orange-500 left-0 -bottom-1 scale-x-0 transition-transform duration-300 z-10 origin-bottom-right;
+    @apply absolute content-[''] w-full h-1 bg-(--effect) -bottom-1 scale-x-0 transition-transform duration-300 z-10 origin-bottom-left left-0;
   }
   .underline-animation:hover::after {
-    @apply scale-x-100 origin-bottom-left;
+    @apply scale-x-100 origin-bottom-right;
   }
 
   .fill-animation {
-    @apply relative z-0 overflow-hidden hover:text-white transition-colors duration-300;
+    @apply relative z-0 overflow-hidden hover:text-(--effectText) transition-colors duration-300;
   }
   .fill-animation::after {
-    @apply absolute content-[''] w-full h-full bg-orange-500 left-0 top-0 scale-x-0 transition-transform duration-300 origin-right z-[-1];
+    @apply absolute content-[''] w-full h-full bg-(--effect) left-0 top-0 scale-x-0 transition-transform duration-300 origin-right z-[-1];
   }
   .fill-animation:hover::after {
     @apply scale-x-100 origin-left;
-  }
-
-  .hard-shadow {
-    box-shadow: 4 4 0 0 black;
   }
 }
