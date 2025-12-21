@@ -31,7 +31,7 @@ export default function Hero(){
 
       <div className="flex gap-4 text-sm font-mono">
         <ClickButton text={"view-work"} link={"#projects"} />
-        <ClickButton text={"github"} link={"https://github.com"}/>
+        <ClickButton text={"github"} link={"https://github.com/Flickz-the-goat"}/>
       </div>
     </div>
 
