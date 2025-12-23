@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export default function Projects() {
   const projects = [
     {
@@ -7,7 +9,13 @@ export default function Projects() {
       link: "https://github.com/Flickz-the-goat/africited",
       tech: ["Next.js", "TailwindCSS", "Supabase", "StripeJS"],
     },
-    
+    {
+    title: "Basic Live Flight Tracker",
+    description: "A React-based map that displays real-time airplane positions using OpenSky API. Planes move smoothly based on heading and speed, with interactive markers and flight path tracking.",
+    link: "https://github.com/Flickz-the-goat/flight-tracker", 
+    tech: ["React", "Next.js", "Mapbox GL", "TypeScript", "OpenSky API"],
+  }
+
   ];
 
   return (
