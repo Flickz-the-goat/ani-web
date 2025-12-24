@@ -12,7 +12,7 @@ export default function Projects() {
     {
     title: "Basic Live Flight Tracker",
     description: "A React-based map that displays real-time airplane positions using OpenSky API. Planes move smoothly based on heading and speed, with interactive markers and flight path tracking.",
-    link: "https://github.com/Flickz-the-goat/flight-tracker", 
+    link: "https://github.com/Flickz-the-goat/plane-tracker", 
     tech: ["React", "Next.js", "Mapbox GL", "TypeScript", "OpenSky API"],
   }
 
