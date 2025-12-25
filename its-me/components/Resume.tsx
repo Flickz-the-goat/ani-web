@@ -21,24 +21,6 @@ export default function Resume(){
       />
     </div>
 
-    {/* Action */}
-    <a
-      href="/resume.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="
-        inline-flex items-center justify-center
-        border border-(--borderColor)
-        px-6 py-3
-        text-(--textMain)
-        transition-colors
-        hover:bg-(--effect)
-        hover:text-(--effectText)
-      "
-    >
-      View full resume
-    </a>
-
   </div>
 </section>
 
